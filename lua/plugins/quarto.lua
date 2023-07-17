@@ -11,7 +11,12 @@ return {
 
   {
     "quarto-dev/quarto-nvim",
-    opts = {},
+    dev = false,
+    opts = {
+      lspFeatures = {
+        languages = { "r", "python", "julia", "bash", "html", "lua" },
+      },
+    },
     ft = "quarto",
     keys = {
       { "<leader>qa", ":QuartoActivate<cr>", desc = "quarto activate" },
