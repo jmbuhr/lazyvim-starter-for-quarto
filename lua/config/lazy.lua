@@ -29,6 +29,7 @@ require("lazy").setup({
   dev = {
     path = "~/projects",
     patterns = { "jmbuhr", "quarto-dev" },
+    fallback = true,
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = { enabled = true }, -- automatically check for plugin updates
