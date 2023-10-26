@@ -44,7 +44,11 @@ return {
 
   {
     "jmbuhr/otter.nvim",
-    opts = {},
+    opts = {
+      buffers = {
+        set_filetype = true,
+      },
+    },
   },
 
   {
